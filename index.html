@@ -458,13 +458,13 @@ background-clip: text; /* Adicione esta linha */
 
             localStorage.setItem('cineverse_reviews', JSON.stringify(database));
             
-            // Atualiza exibição interna do card instantaneamente
+            // Atualiza exibicao interna do card instantaneamente
             let displayZone = document.getElementById(`saved-display-${movieId}`);
             if(displayZone) {
-                displayZone.innerHTML = `<strong>Sua Crítica (${starsSelected}★):</strong> "${textComment || 'Sem comentários registrados.'}"`;
+                displayZone.innerHTML = `<strong>Sua Critica (${starsSelected}★):</strong> "${textComment || 'Sem comentários registrados.'}"`;
                 displayZone.style.display = 'block';
             }
-            alert("Sua avaliação foi salva no diário do CineVerse!");
+            alert("Sua avaliacao foi salva no diario do CineVerse!");
         }
 
         function handleStarClick(movieId, starValue) {
@@ -479,7 +479,7 @@ background-clip: text; /* Adicione esta linha */
             });
         }
 
-        // --- SISTEMA DE RENDERIZAÇÃO DE FILMES ---
+        // --- SISTEMA DE RENDERIZACAO DE FILMES ---
         function buildMovieCards(moviesArray, targetContainerId) {
             const container = document.getElementById(targetContainerId);
             container.innerHTML = '';
