@@ -1,10 +1,11 @@
-header{
-    background-color: blue;
-    color: white;
-    text-align: center;
+:root {
+    --bg-main: #080b11;
+    --bg-card: #111622;
+    /* ... restante do código CSS fornecido anteriormente ... */
 }
-main{
-    background-color: white;
-    color: blue;
-    text-align: center;
+
+* {
+    margin: 0;
+    padding: 0;
 }
+/* E assim por diante, sem NENHUMA tag <script> ou HTML aqui dentro */
