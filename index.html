@@ -284,7 +284,7 @@ background-clip: text; /* Adicione esta linha */
             line-height: 1.4;
         }
 
-        /* --- SISTEMA DE AVALIAÇÃO INTERNA --- */
+        /* --- SISTEMA DE AVALIACAO INTERNA --- */
         .review-section {
             background-color: var(--bg-main);
             border: 1px solid var(--border-color);
@@ -352,47 +352,47 @@ background-clip: text; /* Adicione esta linha */
         <div class="logo">CineVerse Hub</div>
         <nav>
             <button id="nav-movies" class="active" onclick="switchSection('movies')">Explorar Filmes</button>
-            <button id="nav-github" onclick="switchSection('github')">Análise Dev (GitHub)</button>
-            <button id="nav-favs" onclick="switchSection('favs')">Minhas Avaliações</button>
+            <button id="nav-github" onclick="switchSection('github')">Analise Dev (GitHub)</button>
+            <button id="nav-favs" onclick="switchSection('favs')">Minhas Avaliacoes</button>
         </nav>
     </header>
 
     <main>
         
         <section id="sec-movies" class="section active">
-            <h2 class="section-title">Descubra Novas Histórias</h2>
-            <p class="section-desc">Pesquise por títulos globais ou analise os mais populares com críticas da comunidade.</p>
+            <h2 class="section-title">Descubra Novas Historias</h2>
+            <p class="section-desc">Pesquise por titulos globais ou analise os mais populares com criticas da comunidade.</p>
             
             <div class="search-wrapper">
                 <input type="text" id="movie-search-input" placeholder="Ex: Interstellar, Batman, Inception..." onkeypress="checkKey(event, 'movie')">
                 <button class="btn btn-pink" onclick="executeMovieSearch()">Buscar Filme</button>
             </div>
             
-            <div id="movie-error" class="error-banner">Erro ao processar catálogo de filmes.</div>
+            <div id="movie-error" class="error-banner">Erro ao processar catalogo de filmes.</div>
             <div class="movies-grid" id="movies-container"></div>
         </section>
 
         <section id="sec-github" class="section">
-            <h2 class="section-title">Análise de Portfólio GitHub</h2>
-            <p class="section-desc">Insira um nome de usuário do GitHub para extrair dados técnicos e repositórios em tempo real.</p>
+            <h2 class="section-title">Analise de Portfolio GitHub</h2>
+            <p class="section-desc">Insira um nome de usuario do GitHub para extrair dados tecnicos e repositorios em tempo real.</p>
             
             <div class="search-wrapper">
                 <input type="text" id="git-search-input" placeholder="Ex: torvalds" onkeypress="checkKey(event, 'git')">
                 <button class="btn btn-purple" onclick="executeGitSearch()">Analisar Dev</button>
             </div>
 
-            <div id="git-error" class="error-banner">Desenvolvedor não encontrado na base de dados do GitHub.</div>
+            <div id="git-error" class="error-banner">Desenvolvedor nao encontrado na base de dados do GitHub.</div>
             
             <div id="git-results-area" style="display: none;">
                 <div class="git-profile-card" id="git-profile-render"></div>
-                <h3 style="margin-bottom: 1.5rem; font-weight: 600;">Repositórios em Destaque</h3>
+                <h3 style="margin-bottom: 1.5rem; font-weight: 600;">Repositorios em Destaque</h3>
                 <div class="grid-layout" id="git-repos-render"></div>
             </div>
         </section>
 
         <section id="sec-favs" class="section">
-            <h2 class="section-title">Seu Diário de Críticas</h2>
-            <p class="section-desc">Gerencie todos os filmes que você avaliou, favoritou e comentou localmente.</p>
+            <h2 class="section-title">Seu Diario de Criticas</h2>
+            <p class="section-desc">Gerencie todos os filmes que voce avaliou, favoritou e comentou localmente.</p>
             <div class="movies-grid" id="favorites-container"></div>
         </section>
 
@@ -403,10 +403,10 @@ background-clip: text; /* Adicione esta linha */
     </footer>
 
     <script>
-        // Configuração Inicial - Caso possua chave TMDB substitua aqui, senão rodará catálogo Mock de Alta Fidelidade
+        // Configuracao Inicial - Caso possua chave TMDB substitua aqui, senao rodara catalogo Mock de Alta Fidelidade
         const TMDB_KEY = "SUA_CHAVE_AQUI"; 
 
-        // Banco de Dados Local Fake estruturado para manter o design impecável se não houver internet/API Key
+        // Banco de Dados Local Fake estruturado para manter o design impecavel se nao houver internet/API Key
         const localMockDatabase = [
             { id: "m1", title: "Interestelar", poster_path: "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=500", vote_average: 8.6, release_date: "2014-11" },
             { id: "m2", title: "Blade Runner 2049", poster_path: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500", vote_average: 8.0, release_date: "2017-10" },
